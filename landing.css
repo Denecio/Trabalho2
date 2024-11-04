@@ -76,3 +76,53 @@
     margin: 1rem 0;
     cursor: pointer;
 }
+
+.program{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+}
+
+.program_days{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.program_day{
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    width: 100%;
+}
+
+.program_day_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 5rem;
+}
+
+.program_day_activities{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: start;
+    gap: 2rem;
+    width: 100%;
+}
+
+/*.activities{
+    @include grid(2, 2, start, 2rem);
+    width: 100%;
+
+    .activity{
+        @include flex(row, flex-start, center, 1rem);
+    }
+}*/
