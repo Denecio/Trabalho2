@@ -1,0 +1,18 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 3rem;
+    gap: 3rem;
+}
+
+.register_sections{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.register_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

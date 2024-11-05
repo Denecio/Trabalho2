@@ -118,11 +118,8 @@
     width: 100%;
 }
 
-/*.activities{
-    @include grid(2, 2, start, 2rem);
-    width: 100%;
-
-    .activity{
-        @include flex(row, flex-start, center, 1rem);
-    }
-}*/
+.program_day_activities li:before{
+    content: "/";
+    color: var(--yellow);
+    margin-right: 1rem;
+}

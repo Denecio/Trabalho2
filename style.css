@@ -85,12 +85,13 @@ footer{
     row-gap: 1rem;
 }
 
-.footer>a{
+.footer > a{
     display: flex;
     align-items: center;
     gap: 1rem;
     font-size: 1.5rem;
     font-weight: 500;
+    color: var(--black);
 }
 
 .footer > a:nth-child(even){
