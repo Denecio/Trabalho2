@@ -72,6 +72,14 @@ nav > .logo{
     color: var(--blue);
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 3rem;
+    gap: 3rem;
+}
+
 footer{
     width: 100vw;
     background-color: var(--yellow);
