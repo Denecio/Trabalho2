@@ -19,7 +19,8 @@ const contentTypes = {
     '.jpg': 'image/jpeg',
     '.png': 'image/png',
     '.webp': 'image/webp',
-    '.webm': 'video/webm'
+    '.webm': 'video/webm',
+    '.svg': 'image/svg+xml'
 }
 
 async function serve(request, response) {
