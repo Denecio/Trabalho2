@@ -10,7 +10,10 @@ async function renderTeam() {
     cards.forEach((card, i) => {
         let img = document.createElement('img')
         img.src = teams[i].download_url
-        img.style.width = '400px'
+        if(window.innerWidth < 768) 
+            img.style.width = '150px'
+        else
+            img.style.width = '400px'
         img.style.height = 'auto'
         card.shadowRoot.appendChild(img)
     })
