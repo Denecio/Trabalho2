@@ -82,6 +82,24 @@ class Day extends HTMLElement {
                 margin-right: 0.5rem;
                 color: #${this.color};
             }
+
+            @media screen and (max-width: 1000px){
+                :host{
+                    gap: 4rem;
+                }
+            }
+
+            @media screen and (max-width: 768px){
+                :host{
+                    flex-direction: column;
+                    gap: 4rem;
+                }
+
+                ul{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(4,1fr);
+                }
+            }
             `
 
 		this.attachShadow({ mode: 'open' })

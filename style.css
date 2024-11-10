@@ -34,19 +34,19 @@ h1{
 }
   
 h2{
-font-size: 2.5rem;
+    font-size: 2.5rem;
 }
   
 h3{
-font-size: 2rem;
+    font-size: 2rem;
 }
   
 h4{
-font-size: 1.75rem;
+    font-size: 1.75rem;
 }
   
 p{
-font-size: 1.5rem;
+    font-size: 1.5rem;
 }
   
 label{
@@ -141,5 +141,45 @@ footer{
 
 .footer > a:nth-child(odd){
     grid-column: 3;
+}
+
+@media screen and (max-width: 768px){
+    :root{
+        font-size: 12px;
+    }
+    nav{
+        padding: 1rem;
+    }
+
+    nav .logo{
+        height: 2rem;
+    }
+
+    .links{
+        gap: 1.5rem;
+    }
+
+    main{
+        padding: 6rem 1.5rem;
+    }
+
+    footer{
+        padding: 3.5rem 1.5rem 10rem 1.5rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: 1rem;
+    }
+
+    .footer > a:nth-child(even){
+        grid-column: 1;
+    }
+
+    .footer > a:nth-child(odd){
+        grid-column: 1;
+    }
+    
+    h1{
+        font-size: 3rem;
+    }
 }
 

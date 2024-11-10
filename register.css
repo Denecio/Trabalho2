@@ -8,3 +8,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+@media screen and (max-width: 768px){
+    .register_cards{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
