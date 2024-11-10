@@ -1,5 +1,25 @@
+async function getTeam() {
+    let response = await fetch('https://picsum.photos/v2/list')
+    let data = await response.json()
+    return data
+}
+
+async function renderTeam() {
+    let teams = await getTeam()
+    let cards = document.querySelectorAll('team-card')
+    cards.forEach((card, i) => {
+        let img = document.createElement('img')
+        img.src = teams[i].download_url
+        img.style.width = '400px'
+        img.style.height = 'auto'
+        card.shadowRoot.appendChild(img)
+    })
+}
+
+renderTeam()
+
 class Pelouro extends HTMLElement {
-	static get observedAttributes() { return ['title','text','img'] }
+	static get observedAttributes() { return ['title','text','color'] }
 	constructor() {
 		super()
         this.color = this.getAttribute('color') || 'white'
@@ -62,8 +82,6 @@ class Pelouro extends HTMLElement {
             this.text.textContent = value
         else if (attr == 'color')
             this.color = value;
-        else if (attr == 'img')
-            this.img.src = value;
 
 	}
 }

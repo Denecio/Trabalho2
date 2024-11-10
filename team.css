@@ -1,3 +1,15 @@
+.team_cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 team-card:nth-child(even) {
     flex-direction: row-reverse;
+}
+
+team-card img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
 }
